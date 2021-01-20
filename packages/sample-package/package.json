@@ -2,6 +2,7 @@
   "name": "@project/sample-package",
   "version": "1.0.0",
   "scripts": {
+    "start": "echo start in $npm_package_name",
     "start:dev": "echo start:dev in $npm_package_name"
   },
   "dependencies": {
