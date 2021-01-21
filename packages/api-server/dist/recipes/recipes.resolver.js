@@ -15,12 +15,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RecipesResolver = void 0;
 const common_1 = require("@nestjs/common");
 const graphql_1 = require("@nestjs/graphql");
-const apollo_server_express_1 = require("apollo-server-express");
+const apollo_server_fastify_1 = require("apollo-server-fastify");
 const new_recipe_input_1 = require("./dto/new-recipe.input");
 const recipes_args_1 = require("./dto/recipes.args");
 const recipe_model_1 = require("./models/recipe.model");
 const recipes_service_1 = require("./recipes.service");
-const pubSub = new apollo_server_express_1.PubSub();
+const pubSub = new apollo_server_fastify_1.PubSub();
 let RecipesResolver = class RecipesResolver {
     constructor(recipesService) {
         this.recipesService = recipesService;

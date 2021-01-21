@@ -1,14 +1,13 @@
-import { Module } from '@nestjs/common';
-import { GraphQLModule } from '@nestjs/graphql';
-import { RecipesModule } from './recipes/recipes.module';
+import { Module } from '@nestjs/common'
+import { GraphQLModule } from '@nestjs/graphql'
+import { UsersModule } from './users/user.module'
 
 @Module({
   imports: [
-    RecipesModule,
     GraphQLModule.forRoot({
-      installSubscriptionHandlers: true,
-      autoSchemaFile: 'schema.gql',
+      autoSchemaFile: true,
     }),
+    UsersModule,
   ],
 })
 export class AppModule {}

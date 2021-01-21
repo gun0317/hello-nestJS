@@ -27,6 +27,12 @@ $ yarn build
 $ yarn start:server
 ```
 
+### Add npm packages
+ex) for api-server
+```bash
+$ yarn workspace @project/api-server add <npmPackageName>
+```
+
 ### Workspaces info
 
 ```

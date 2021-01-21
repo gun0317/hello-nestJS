@@ -19,6 +19,10 @@ npm-debug.log
 
 # dist
 /dist
+/packages/api-server/dist/
 
 # log
 *.log
+
+# tsbuildinfo
+*.tsbuildinfo

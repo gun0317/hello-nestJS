@@ -9,17 +9,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const graphql_1 = require("@nestjs/graphql");
-const recipes_module_1 = require("./recipes/recipes.module");
+const user_module_1 = require("./users/user.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [
-            recipes_module_1.RecipesModule,
             graphql_1.GraphQLModule.forRoot({
-                installSubscriptionHandlers: true,
-                autoSchemaFile: 'schema.gql',
+                autoSchemaFile: true,
             }),
+            user_module_1.UsersModule,
         ],
     })
 ], AppModule);
