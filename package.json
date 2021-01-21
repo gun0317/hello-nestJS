@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "monorepo with Yarn Workspaces + Lerna - BE: NestJS",
   "scripts": {
-    "build": "",
+    "build": "lerna run build",
     "format": "prettier --write \\\"packages/api-server/src/**/*.ts\\\" \\\"test/**/*.ts\\\"",
     "start": "lerna run start",
     "start:server": "lerna exec --scope @project/api-server --stream yarn start:dev",
