@@ -1,5 +1,5 @@
 # dependencies
-/node_modules
+/node_modules/
 
 # IDE
 /.idea
@@ -18,8 +18,7 @@ npm-debug.log
 /.nyc_output
 
 # dist
-/dist
-/packages/api-server/dist/
+/dist/
 
 # log
 *.log
