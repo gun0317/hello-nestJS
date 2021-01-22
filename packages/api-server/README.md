@@ -3,5 +3,7 @@
 </p>
 
 NestJS + TypeScript + GraphQL
+- users: GraphQL Example
+- movies: REST API Example
 
-Boilerplate Code - [#Link](https://github.com/nestjs/nest/tree/master/sample/23-graphql-code-first)
+Boilerplate Code - [#Link](https://github.com/nestjs/typescript-starter)
