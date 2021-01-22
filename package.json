@@ -1,19 +1,20 @@
 {
   "name": "business-owner-monorepo",
   "version": "1.0.0",
+  "license": "MIT",
   "description": "monorepo with Yarn Workspaces + Lerna - BE: NestJS",
   "scripts": {
     "build": "lerna run build",
-    "format": "prettier --write \\\"packages/api-server/src/**/*.ts\\\" \\\"test/**/*.ts\\\"",
+    "format": "lerna run format",
     "start": "lerna run start",
     "start:server": "lerna exec --scope @project/api-server --stream yarn start:dev",
-    "start:prod": "",
+    "start:prod": "lerna run start:prod",
     "lint": "lerna run lint",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "echo 'No e2e tests implemented yet.'"
+    "test": "lerna run test",
+    "test:watch": "lerna run test:watch",
+    "test:cov": "lerna run test:cov",
+    "test:debug": "lerna run test:debug",
+    "test:e2e": "lerna run test:e2e"
   },
   "private": true,
   "workspaces": [

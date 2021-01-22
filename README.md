@@ -4,7 +4,7 @@
 - api-server
 
 ## API-Server
-[Link](./packages/api-server/README.md)
+[Readme](./packages/api-server/README.md)
 
 
 ## Yarn CLI
@@ -21,9 +21,8 @@ $ yarn install
 $ yarn build
 ```
 ### Run
-
+ex) for api-server
 ```bash
-// for api-server
 $ yarn start:server
 ```
 
